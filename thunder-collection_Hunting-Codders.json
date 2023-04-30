@@ -1,0 +1,258 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Hunting-Codders",
+    "dateExported": "2023-04-30T06:53:39.809Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "888d6d7d-cf48-4fb2-ab91-35250c193806",
+            "name": "Blogs",
+            "containerId": "",
+            "created": "2023-04-20T15:14:22.510Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "24b8e062-391e-408b-bd9e-2284b8e80bdf",
+            "name": "Users",
+            "containerId": "",
+            "created": "2023-04-20T15:24:04.275Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "8a01496a-15a4-4682-9abd-e9f3b4e46666",
+            "colId": "951f8255-c620-4d2a-9d0a-ea7e024ebb90",
+            "containerId": "888d6d7d-cf48-4fb2-ab91-35250c193806",
+            "name": "Get All Blogs",
+            "url": "http://localhost:3000/api/blogs/getallblogs?page=2&limit=5",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-20T01:09:23.143Z",
+            "modified": "2023-04-28T11:46:05.564Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "2",
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "5",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "fe3e64b1-0c83-49c4-b76c-700747141bfa",
+            "colId": "951f8255-c620-4d2a-9d0a-ea7e024ebb90",
+            "containerId": "888d6d7d-cf48-4fb2-ab91-35250c193806",
+            "name": "Add blogs",
+            "url": "http://localhost:3000/api/blogs/addblogs",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-04-20T02:11:26.025Z",
+            "modified": "2023-04-28T09:47:45.167Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXIiOnsiX2lkIjoiNjQ0NzVmN2IzNjVmZGRlZmUxYjdmYmZlIn19LCJpYXQiOjE2ODIzOTk0NjR9.DEcLB-Gsib1HbW69Yk8czy-mUbje4u9aRZlqZM8IvGw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n      \"title\": \"experiment\",\n      \"desc\": \"<!-- #######  HEY, I AM THE SOURCE EDITOR! #########--> <p>The following is a list of&nbsp;Intel Core&nbsp;i5 brand&nbsp;microprocessors. Introduced in 2009, the Core i5 line of microprocessors are intended to be used by mainstream users.<\\/p> <h3 id=\\\"promo-main-heading-1\\\" class=\\\"blade-item-heading\\\">Advancing Performance Hybrid Architecture<\\/h3> <p>13th&nbsp;Gen&nbsp;Intel&reg; Core&trade; processors advances performance hybrid architecture<sup>1<\\/sup>&nbsp;with up to eight Performance-cores (P-core) and up to 16 Efficient-cores (E-core), combined with workloads intelligently routed by Intel&reg; Thread Director<sup>2<\\/sup>.<\\/p> <h3 id=\\\"promo-main-heading-2\\\" class=\\\"blade-item-heading\\\">Built for Modern Gaming<\\/h3> <p>Built for gamers looking for maximum performance to play the latest games, while also having the capabilities to tackle other workloads. New 13th Gen Intel&reg; Core&trade; processor-based PCs make it all possible.<\\/p> <h3 id=\\\"promo-main-heading-3\\\" class=\\\"blade-item-heading\\\">Superior Creating Experience<\\/h3> <p>The 13th Gen Intel&reg; Core&trade; processor family offers faster P-cores and more E-cores with support for DDR4\\/DDR5 and PCIe 4.0\\/5.0. That provides a platform that can max out multitasking and choice for configurability.<\\/p> <h3 id=\\\"promo-main-heading-4\\\" class=\\\"blade-item-heading\\\">Customize for What You Do Every Day<\\/h3> <p>13th Gen Intel&reg; Core&trade; processors deliver highly flexible architecture and industry-leading tools for the ultimate in performance customization.<\\/p> <p><em><strong>Product and Performance Information<\\/strong><\\/em><\\/p> <ul> <li>Performance hybrid architecture combines two core microarchitectures, Performance-cores (P-cores) and Efficient-cores (E-cores), on a single processor die first introduced on 12th Gen Intel&reg; Core&trade; processors. Select 13th Gen&nbsp;Intel&reg; Core&trade; processors do not have performance hybrid architecture, only P-cores, and have same cache size as prior generation; see&nbsp;<a href=\\\"https:\\/\\/ark.intel.com\\/content\\/www\\/us\\/en\\/ark.html#@PanelLabel122139\\\">ark.intel.com<\\/a>&nbsp;for SKU details.<\\/li> <li>Built into the hardware, Intel&reg; Thread Director is provided only in performance hybrid architecture configurations of 12th Gen or newer Intel&reg; Core&trade; processors; OS enablement is required. Available features and functionality vary by OS.<\\/li> <\\/ul>\",\n      \"category\": \"experiment\",\n      \"slug\": \"experiment\",\n      \"img\": \"https://res.cloudinary.com/dxqv1l6n9/image/upload/v1682412402/ozjljkmklzcpylbvpi3a.webp\",\n      \"author\": \"hunting codders\"\n    }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "35eb9669-aa7d-4822-820b-32b2153ed420",
+            "colId": "951f8255-c620-4d2a-9d0a-ea7e024ebb90",
+            "containerId": "888d6d7d-cf48-4fb2-ab91-35250c193806",
+            "name": "Edit Blogs",
+            "url": "http://localhost:3000/api/blogs/editblogs",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-04-20T05:54:11.044Z",
+            "modified": "2023-04-28T10:42:46.865Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXIiOnsiX2lkIjoiNjQ0NzNiMGQzNjVmZGRlZmUxYjdmYmRmIn19LCJpYXQiOjE2ODI0MDIwNTh9.8QJhpBEBBV5ond7GFwVUI6g5qylkOxzL6-YZAOFoN8w"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"_id\": \"644b37a5d812912e74ecf931\",\n    \"user\": \"64473b0d365fddefe1b7fbdf\",\n    \"title\": \"Validating Your PostgreSQL Backups on Docker\",\n    \"desc\": \"<div class=\\\"d-flex top-article-wrapper\\\"> <div class=\\\"sidebar\\\"> <div class=\\\"fusion-layout-column fusion_builder_column fusion-builder-column-10 fusion_builder_column_1_2 1_2 fusion-flex-column\\\"> <div class=\\\"fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column\\\"> <div class=\\\"fusion-text fusion-text-1\\\"> <div class=\\\"ik il im in io\\\"> <p style=\\\"font-weight: 400;\\\">Backups are the vital and important part of any disaster recovery plan, taking backups of the production database is also a basic and an important part of&nbsp;<a href=\\\"https://severalnines.com/product/clustercontrol/for_postgresql\\\">PostgreSQL</a>&nbsp;administration. However, DBA&rsquo;s don&rsquo;t often validate that those backups are reliable.</p> <p style=\\\"font-weight: 400;\\\">Every organization&nbsp;<a href=\\\"https://severalnines.com/blog/current-state-open-source-backup-management-postgresql\\\">takes PostgreSQL database backups in different form</a>, some may take a file system (physical) backup of the PostgreSQL data directories (using tools like&nbsp;<a href=\\\"https://severalnines.com/blog/using-barman-backup-postgresql-overview\\\">Barman</a>,&nbsp;<a href=\\\"https://severalnines.com/blog/how-use-pgbackrest-backup-postgresql-and-timescaledb\\\">PGBackRest</a>) while others may take only logical backups (using&nbsp;<a href=\\\"https://severalnines.com/blog/using-pgdump-and-pgdumpall-backup-postgresql\\\">pg_dump</a>), and even others may take block level snapshots using tools like EBS or VMWare snapshot.</p> <p style=\\\"font-weight: 400;\\\">In this blog, we will show you how to validate your PostgreSQL backup by restoring the backup onto a Docker container using the tool&nbsp;<a href=\\\"https://severalnines.com/blog/how-use-pgbackrest-backup-postgresql-and-timescaledb\\\">pgBackRest</a>&nbsp;for taking and restoring the backup. We are assuming that you already have knowledge on how to use&nbsp;<a href=\\\"https://severalnines.com/product/clustercontrol/for_postgresql\\\">PostgreSQL</a>,&nbsp;<a href=\\\"https://severalnines.com/blog/how-deploy-postgresql-docker-container-using-clustercontrol\\\">Docker</a>&nbsp;and&nbsp;<a href=\\\"https://severalnines.com/blog/how-use-pgbackrest-backup-postgresql-and-timescaledb\\\">pgBackRest</a>.</p> <h2 style=\\\"font-weight: 800;\\\">Why Should You Use Docker?</h2> <p style=\\\"font-weight: 400;\\\">Docker makes automation simpler, it also eases the job of integrating our PostgreSQL Backup Validation task in a CI/CD tools like CircleCI, Travis, GitLab or Jenkins. Using Docker avoids the time and resource we have to spend on bringing the new environment for testing the backup.</p> <h2 style=\\\"font-weight: 800;\\\">Demo Setup</h2> <table style=\\\"font-weight: 400;\\\"> <tbody> <tr> <td> <p>Host&nbsp;</p> </td> <td> <p>Role</p> </td> <td> <p>Installed</p> <p>Packages&nbsp;</p> </td> <td> <p>Crontab</p> </td> </tr> <tr> <td> <p>node-1 192.168.0.111</p> <p>CentOS-7</p> </td> <td> <p>Posgresql-11 primary Instance.</p> <p>Created user and database &ldquo;pgbench&ldquo; and initialized with pgbench tables.</p> </td> <td> <p>postgresql-11, pgbackrest-2.15</p> </td> <td> <p>Running pgbench every 5mins to simulate the workload.</p> </td> </tr> <tr> <td> <p>node-2&nbsp;192.168.0.112&nbsp;CentOS-7</p> </td> <td> <p>Test Machine &ndash; we will run our Docker validation on this host.&nbsp;</p> </td> <td> <p>docker-ce-18.06, pgbackrest-2.15</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>node-3</p> <p>192.168.0.113</p> <p>CentOS-7</p> </td> <td> <p>pgBackRest Repository Host</p> </td> <td> <p>pgbackrest-2.15</p> </td> <td> <p>Running pgbackrest to take Incr backup every 4 hour</p> <p>Diff backup every day</p> <p>Full backup weekly&nbsp;</p> </td> </tr> </tbody> </table> <p style=\\\"font-weight: 400;\\\">&nbsp;</p> <p style=\\\"font-weight: 400;\\\">For pgbackrest to work, I have setup passwordless SSH access between these nodes.</p> <p style=\\\"font-weight: 400;\\\">User &ldquo;postgres&rdquo; on node-1 and node-2 can login passwordless to user &ldquo;pgbackrest&rdquo; on node-3.</p> <p class=\\\"pw-post-body-paragraph kk kl ir km b kn ko jf kp kq kr ji ks kt ku kv kw kx ky kz la lb lc ld le lf ik bj\\\" data-selectable-paragraph=\\\"\\\">[vagrant@node-1 ~]$ sudo -u postgres ssh pgbackrest@node-3 uptime 13:31:51 up 7:00, 1 user, load average: 0.00, 0.01, 0.05 [vagrant@node-2 ~]$ sudo -u postgres ssh pgbackrest@node-3 uptime 13:31:27 up 7:00, 1 user, load average: 0.00, 0.01, 0.05</p> <p style=\\\"font-weight: 400;\\\">User &ldquo;pgbackrest&rdquo; on node-3 can login passwordless to user &ldquo;postgres&rdquo; on node-1 and node-2.</p> <p class=\\\"pw-post-body-paragraph kk kl ir km b kn ko jf kp kq kr ji ks kt ku kv kw kx ky kz la lb lc ld le lf ik bj\\\" data-selectable-paragraph=\\\"\\\">[vagrant@node-3 ~]$ sudo -u pgbackrest ssh postgres@node-1 uptime 13:32:29 up 7:02, 1 user, load average: 1.18, 0.83, 0.58 [vagrant@node-3 ~]$ sudo -u pgbackrest ssh postgres@node-2 uptime 13:32:33 up 7:01, 1 user, load average: 0.00, 0.01, 0.05</p> <h2 style=\\\"font-weight: 800;\\\">Overview of Backup Validation</h2> <p style=\\\"font-weight: 400;\\\">Below is a brief overview of the steps we will be following for our PostgreSQL Backup Validation.</p> <ol style=\\\"font-weight: 400;\\\"> <li>Using the&nbsp;pgbackrest restore&nbsp;command we will fetch the latest backup from the pgBackRest Repository Host (node-3) to the Test Machine (node-2) directory&nbsp;/var/lib/pgsql/11/data</li> <li>During the&nbsp;docker run, we mount the host machine (node-2) directory&nbsp;/var/lib/pgsql&nbsp;on the docker container and start the postgres/postmaster daemon from the mounted directory. We would also expose the port 5432 from container to host machine port 15432.&nbsp;</li> <li>Once the docker container started running, we will connect to the PostgreSQL database via node-2:15432 and verify all tables and rows are restored. We would also check the PostgreSQL logs to make sure there is no ERROR message during the recovery and the instance has also reached the consistent state.</li> </ol> <p style=\\\"font-weight: 400;\\\">Most of the backup validation steps will be performed on host node-2.</p> <h2 style=\\\"font-weight: 800;\\\">Building the Docker Image</h2> <p style=\\\"font-weight: 400;\\\">On node-2, create Dockerfile and build the docker image &ldquo;postgresql:11&rdquo;. In the below Dockerfile, we will&nbsp;apply&nbsp;the following changes over centos:7 base image.</p> <ol style=\\\"font-weight: 400;\\\"> <li>Installing postgresql-11, pgbackrest and openssh-clients. Openssh-clients is needed for pgbackrest.</li> <li>Configuring pgbackrest &ndash; We need pgbackrest configuration in the image to test PITR, without pgbackrest configuration&nbsp;restore_command&nbsp;would fail. As part of pgbackrest configuration&nbsp; <ol> <li>We are adding the pgbackrest repository host ip (192.168.0.113) in the config file&nbsp;/etc/pgbackrest.conf.&nbsp;</li> <li>We also need password less SSH access between the docker container and pgbackrest repository host. For this, I am copying SSH_PRIVATE_KEY which I have already generated and I have also added it&rsquo;s public key to the pgbackrest repository host (&nbsp;pgbackrest@node-3&nbsp;) .</li> </ol> </li> <li>VOLUME [&ldquo;${PGHOME_DIR}&rdquo;]&nbsp;&ndash; Defines the container directory&nbsp;/var/lib/pgsql&nbsp;as a mount point. While running&nbsp;docker run&nbsp;command we will specify node-2 host directory to this mount point.</li> <li>USER postgres&nbsp;&ndash; Any command, runs on the container will be executed as postgres user.</li> </ol> </div> </div> </div> </div> </div> </div>\",\n    \"category\": \"horizontal\",\n    \"slug\": \"validating-your-postgresql-backups-on-docker\",\n    \"img\": \"https://res.cloudinary.com/dxqv1l6n9/image/upload/v1682651045/yucnnhqyy0cpkgte0fhq.webp\",\n    \"author\": \"Hunting Codders\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "486e17b8-8fe8-43a0-9754-b538b653d921",
+            "colId": "951f8255-c620-4d2a-9d0a-ea7e024ebb90",
+            "containerId": "888d6d7d-cf48-4fb2-ab91-35250c193806",
+            "name": "Delete Blogs",
+            "url": "http://localhost:3000/api/blogs/deleteblogs",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-04-20T06:12:04.890Z",
+            "modified": "2023-04-28T10:40:34.115Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXIiOnsiX2lkIjoiNjQ0NzVmN2IzNjVmZGRlZmUxYjdmYmZlIn19LCJpYXQiOjE2ODIzOTk0NjR9.DEcLB-Gsib1HbW69Yk8czy-mUbje4u9aRZlqZM8IvGw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"_id\": \"644b9640884617c2ee385e9e\",\n   \"public_id\": \"ozjljkmklzcpylbvpi3a\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b1aa41bc-6327-47bd-a409-46b92333bc8b",
+            "colId": "951f8255-c620-4d2a-9d0a-ea7e024ebb90",
+            "containerId": "888d6d7d-cf48-4fb2-ab91-35250c193806",
+            "name": "Get Single Blog",
+            "url": "http://localhost:3000/api/blogs/getsingleblog?slug=intel-core-processers",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-04-20T15:05:59.134Z",
+            "modified": "2023-04-28T05:06:14.458Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "slug",
+                    "value": "intel-core-processers",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "cd76f854-c419-4c88-84b6-d4b142e534e0",
+            "colId": "951f8255-c620-4d2a-9d0a-ea7e024ebb90",
+            "containerId": "24b8e062-391e-408b-bd9e-2284b8e80bdf",
+            "name": "Add new User",
+            "url": "http://localhost:3000/api/user/adduser",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-04-20T15:24:18.074Z",
+            "modified": "2023-04-25T05:04:59.953Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"test6\",\n  \"email\": \"test6@email.com\",\n  \"password\": \"password\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "53b6d196-2b7c-4566-9d4d-b5d103f9e962",
+            "colId": "951f8255-c620-4d2a-9d0a-ea7e024ebb90",
+            "containerId": "24b8e062-391e-408b-bd9e-2284b8e80bdf",
+            "name": "Get User",
+            "url": "http://localhost:3000/api/user/getuser",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-04-20T15:32:59.367Z",
+            "modified": "2023-04-25T05:54:18.556Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"test5@email.com\",\n  \"password\": \"password\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "68a7c230-66aa-4c1e-b42e-3ce03918913b",
+            "colId": "951f8255-c620-4d2a-9d0a-ea7e024ebb90",
+            "containerId": "888d6d7d-cf48-4fb2-ab91-35250c193806",
+            "name": "Get All Slugs",
+            "url": "http://localhost:3000/api/blogs/getallslugs",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-04-24T12:40:40.306Z",
+            "modified": "2023-04-25T05:59:22.553Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXIiOnsiX2lkIjoiNjQ0NzNiMGQzNjVmZGRlZmUxYjdmYmRmIn19LCJpYXQiOjE2ODI0MDIwNTh9.8QJhpBEBBV5ond7GFwVUI6g5qylkOxzL6-YZAOFoN8w"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0f112507-1c43-4629-bcc2-4e350ca01a72",
+            "colId": "951f8255-c620-4d2a-9d0a-ea7e024ebb90",
+            "containerId": "888d6d7d-cf48-4fb2-ab91-35250c193806",
+            "name": "All Blogs in Category",
+            "url": "http://localhost:3000/api/blogs/getsinglecategoryblogs?category=vertical&page=1&limit=5",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-04-28T11:09:11.155Z",
+            "modified": "2023-04-28T11:55:22.842Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "category",
+                    "value": "vertical",
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "5",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "f9972e65-84ba-4cdd-b2a5-13463062804c",
+            "colId": "951f8255-c620-4d2a-9d0a-ea7e024ebb90",
+            "containerId": "888d6d7d-cf48-4fb2-ab91-35250c193806",
+            "name": "Search Blogs",
+            "url": "http://localhost:3000/api/blogs/searchblogs?search=how&page=1&limit=5",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-04-30T02:25:43.994Z",
+            "modified": "2023-04-30T03:04:17.405Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "search",
+                    "value": "how",
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "5",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
